@@ -1,1 +1,41 @@
-<h1>Hello World</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="game-container">
+    <h1>MINESWEEPER</h1>
+
+    <div class="controls">
+        <div class="input-group">
+            <label>W</label>
+            <input type="number" id="input-width" value="10" min="5" max="30">
+        </div>
+        <div class="input-group">
+            <label>H</label>
+            <input type="number" id="input-height" value="10" min="5" max="30">
+        </div>
+        <div class="input-group">
+            <label>Mine %</label>
+            <input type="number" id="input-mines" value="15" min="1" max="99">
+        </div>
+        <button onclick="startGame()">New Game</button>
+    </div>
+
+    <div class="stats">
+        <span>Time: <span id="timer">0</span>s</span>
+    </div>
+
+    <div id="grid-wrapper">
+        <div id="grid"></div>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
